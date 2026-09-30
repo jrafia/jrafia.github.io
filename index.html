@@ -11,9 +11,10 @@
 nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .nav{max-width:1120px;margin:auto;padding:14px 22px;display:flex;justify-content:space-between;align-items:center}
 .logo{font-weight:800;color:var(--accent);letter-spacing:.3px}.links a{margin-left:18px;color:var(--text);text-decoration:none;font-size:14px}.links a:hover{color:var(--accent)}
-.hero{background:linear-gradient(135deg,#eff6ff,#ecfeff);padding:88px 22px 70px}.wrap{max-width:1120px;margin:auto}
+.hero{background:linear-gradient(135deg,#eff6ff,#ecfeff);padding:72px 22px 70px}.wrap{max-width:1120px;margin:auto}.hero-layout{display:grid;grid-template-columns:minmax(240px,360px) 1fr;gap:42px;align-items:center}
 .badge{display:inline-block;padding:7px 12px;border-radius:999px;background:#dbeafe;color:#1d4ed8;font-weight:700;font-size:13px}
 h1{font-size:clamp(38px,6vw,68px);line-height:1.05;margin:18px 0 16px;letter-spacing:-2px}.hero h2{font-size:clamp(19px,3vw,28px);font-weight:600;color:#334155;margin:0 0 18px}.hero p{max-width:760px;color:var(--muted);font-size:18px}
+.profile-photo{margin:0}.profile-photo img{display:block;width:100%;height:340px;object-fit:cover;object-position:center 25%;border-radius:22px;border:5px solid #fff;box-shadow:0 14px 36px rgba(15,23,42,.16)}
 .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700;border:1px solid var(--line);background:white;color:var(--text)}.btn.primary{background:var(--accent);color:white;border-color:var(--accent)}
 section{padding:70px 22px}.section-title{font-size:32px;margin:0 0 10px}.section-sub{color:var(--muted);margin-top:0}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:0 8px 30px rgba(15,23,42,.05)}.card h3{margin-top:0}.card p{color:var(--muted)}
@@ -21,15 +22,17 @@ section{padding:70px 22px}.section-title{font-size:32px;margin:0 0 10px}.section
 .timeline{position:relative;margin-top:28px}.job{background:white;border:1px solid var(--line);border-radius:16px;padding:24px;margin-bottom:18px}.job-head{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.job h3{margin:0 0 4px}.date{color:var(--accent);font-weight:700;font-size:14px}.job ul{margin-bottom:0}.job li{margin:8px 0;color:#475569}
 .two{display:grid;grid-template-columns:1.2fr .8fr;gap:24px}.edu{padding:18px 0;border-bottom:1px solid var(--line)}.edu:last-child{border-bottom:0}
 footer{background:#0f172a;color:#cbd5e1;padding:35px 22px;text-align:center}footer a{color:#93c5fd;text-decoration:none}
-@media(max-width:800px){.grid,.two{grid-template-columns:1fr}.links{display:none}.hero{padding-top:65px}section{padding:52px 18px}}
+@media(max-width:800px){.grid,.two,.hero-layout{grid-template-columns:1fr}.links{display:none}.hero{padding-top:45px}.profile-photo{max-width:340px;margin:0 auto 12px}.profile-photo img{height:300px}section{padding:52px 18px}}
 </style>
 </head>
 <body>
 <nav><div class="nav"><div class="logo">Jannatul Rafia</div><div class="links">
-<a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a>
+<a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
 </div></div></nav>
 
-<header class="hero"><div class="wrap">
+<header class="hero"><div class="wrap hero-layout">
+<div class="profile-photo"><img src="profile.jpg" alt="Mst. Jannatul Rafia"></div>
+<div class="hero-content">
 <span class="badge">Open to Professional Opportunities</span>
 <h1>Mst. Jannatul Rafia</h1>
 <h2>Customer Support Specialist · Oracle Forms &amp; PL/SQL Developer · AI Quality Analyst</h2>
@@ -38,6 +41,7 @@ footer{background:#0f172a;color:#cbd5e1;padding:35px 22px;text-align:center}foot
 <a class="btn primary" href="mailto:jannatulrafia851@gmail.com">Contact Me</a>
 <a class="btn" href="https://linkedin.com/in/jannatul-rafia" target="_blank">LinkedIn</a>
 <a class="btn" href="https://github.com/jrafia" target="_blank">GitHub</a>
+</div>
 </div>
 </div></header>
 
@@ -58,6 +62,28 @@ footer{background:#0f172a;color:#cbd5e1;padding:35px 22px;text-align:center}foot
 <div class="job"><div class="job-head"><div><h3>Jr. Programmer</h3><strong>WEBNS Technology Ltd</strong></div><div class="date">Jul 2022 – Oct 2025</div></div><ul><li>Maintained production applications, reports, structured data workflows, and technical documentation.</li><li>Provided technical and operational support for application users and investigated system issues.</li><li>Supported data validation, reporting, application testing, and business-process requirements.</li></ul></div>
 <div class="job"><div class="job-head"><div><h3>Jr. Software Engineer</h3><strong>PrideSys IT Ltd</strong></div><div class="date">Dec 2021 – May 2022</div></div><ul><li>Supported ERP applications using Oracle Forms and Oracle Reports.</li><li>Assisted with application development, testing, debugging, troubleshooting, and user support.</li><li>Worked with database-driven business processes and maintained technical documentation.</li></ul></div>
 <div class="job"><div class="job-head"><div><h3>Customer Support / Technical Support</h3><strong>FIFO Tech</strong></div><div class="date">01 Apr 2018 – 31 Oct 2018</div></div><ul><li>Handled customer and user queries through chat, email, phone, or designated support channels.</li><li>Identified issues, gathered relevant information, provided solutions, and escalated complex cases when required.</li><li>Maintained accurate customer records, support documentation, and case information.</li><li>Followed SOPs, quality standards, escalation procedures, and response-time requirements.</li></ul></div>
+</div></div></section>
+
+
+<section id="projects"><div class="wrap">
+<h2 class="section-title">Projects &amp; Live Demos</h2>
+<p class="section-sub">Explore selected software projects and websites.</p>
+<div class="grid">
+<div class="card">
+<h3>Oracle APEX Pharmacy Management System</h3>
+<p>A live demo of a pharmacy management application built with Oracle APEX.</p>
+<a class="btn primary" href="https://oracleapex.com/ords/r/misty/pharmacy-management-system71150" target="_blank" rel="noopener noreferrer">View Software Demo</a>
+</div>
+<div class="card">
+<h3>Roshni Mart</h3>
+<p>Business website showcasing Roshni Mart and its services.</p>
+<a class="btn primary" href="https://sites.google.com/view/roshnimart/" target="_blank" rel="noopener noreferrer">Visit Website</a>
+</div>
+<div class="card">
+<h3>Sahityananda</h3>
+<p>A literary website published with GitHub Pages.</p>
+<a class="btn primary" href="https://jrafia.github.io/sahityananda" target="_blank" rel="noopener noreferrer">Visit Website</a>
+</div>
 </div></div></section>
 
 <section id="education"><div class="wrap"><h2 class="section-title">Education</h2><div class="card">
